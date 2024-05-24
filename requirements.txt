@@ -1,0 +1,6 @@
+nextcord
+motor
+yaml
+openai
+requests
+six
