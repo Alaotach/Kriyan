@@ -63,8 +63,8 @@ replied_messages = {}
 
 
 mongo_url = "mongodb+srv://barbie:koraon@barbie.if2ydh7.mongodb.net/?retryWrites=true&w=majority"
-openai.api_key = "YNl2yI2kXUEuCY8bFawS_7z4vDCkjuoCthx4ne21t3g"
-openai.api_base = "https://chimeragpt.adventblocks.cc/api/v1"
+openai.api_key = "hPbuvPgBziCuVk9tEF7Sba5XyiFkoDs5oKqQDa24ir8"
+openai.api_base = "https://api.naga.ac/v1"
 
 cluster = motor.AsyncIOMotorClient(mongo_url)
 db = cluster["Chatbot"]
@@ -84,7 +84,7 @@ async def on_ready():
   chatbot = db["Chatbot"]
   print(chatbot)
 
-  await client.change_presence(activity=nextcord.Activity(type=nextcord.ActivityType.watching,name="I'm a barbie girl in the barbie world"))
+  await client.change_presence(activity=nextcord.Activity(type=nextcord.ActivityType.watching,name="Hey I'm Kriyan!"))
   
 
 
@@ -164,20 +164,6 @@ async def on_message(message):
               
     await client.process_commands(message)
 
-
-@client.slash_command()
-async def barbie(interaction:nextcord.Interaction):
-    try:
-      channel = interaction.user.voice.channel
-    except:
-      await interaction.response.send_message('Please Join A voice channel')
-    vc= await channel.connect()
-    source = await nextcord.FFmpegOpusAudio.from_probe("barbie.mp3", method="fallback")
-    vc.play(source)
-    await interaction.response.send_message('Started Playing')
-    await asyncio.sleep(205)
-    await vc.stop()
-    await vc.disconnect()
 
 @client.slash_command()
 @has_permissions(manage_guild=True)

@@ -17,14 +17,13 @@ INSTRUCTIONS: barbie # Specify the instruction prompt to use (check 'instruction
 # To add custom prompts, create a .txt file like 'custom.txt' and set INSTRUCTIONS as 'custom'
 
 Discord: https://discord.gg/EdyfVndNby
-Github: https://github.com/Aryan2-1
+Github: https://github.com/Alaotach
 
 TRIGGER:
   - chatbot
-  - aloo
+  - kriyan
   - chatgpt
   - gpt
-  - aloogpt
 # Define the triggers that the bot should always respond to when in message
 
 PRESENCES:
