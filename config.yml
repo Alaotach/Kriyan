@@ -7,6 +7,7 @@ SMART_MENTION: true # Set to true to enable smart mention feature
 MAX_HISTORY: 8 # Set the maximum message history
 
 GPT_MODEL: gpt-3.5-turbo-16k 
+TOKEN: MTI0MzQ5MjYwMjEwODU3OTg4NA.GXd4Jz.2P4D1jLdnpqwjXZG_Uhx4c0FAwUoDuVvbUcgys
 
 PRESENCES_CHANGE_DELAY: 10 # Please note that the Presences Change Delay is measured in seconds. It is advisable not to set it too low, as doing so may result in your bot being rate-limited by Discord
 AI_NSFW_CONTENT_FILTER: true # Enable NSFW AI detector to detect NSFW prompt on Imagine Command
